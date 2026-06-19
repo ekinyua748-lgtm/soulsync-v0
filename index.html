@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soulsync V0</title>
+</head>
+<body>
+
+  <h1>Soulsync</h1>
+
+  <input id="goalInput" placeholder="Enter your goal">
+
+  <button onclick="saveGoal()">Save Goal</button>
+
+  <p id="displayGoal">Nothing yet</p>
+
+  <script>
+    function saveGoal() {
+      let goal = document.getElementById("goalInput").value;
+      document.getElementById("displayGoal").innerText = goal;
+    }
+  </script>
+
+</body>
+</html>
